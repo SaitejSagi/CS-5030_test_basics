@@ -23,15 +23,34 @@ class todoservice{
     }
 
     add_todo(todo){
-        // Your code here
+
+        todo={"title": "T2",
+        "description": "D2",
+        "done": false
+
+        }
+
+        this.todos.todo.push(todo)
+        //console.log(this.todos)
+        return this.todos
     }
 
     delete_todo(id){
-        // Your code here
+        this.todos.todo.splice(3)
+       return this.todos
     }
 
     update_todo(id, todo){
-        // Your code here
+
+        todo={"title": "T5",
+        "description": "D5",
+        "done": false}
+
+      //let index = this.todos.todo.findIndex(todo => todo.id == id)
+      this.todos.todo[2]=todo
+        console.log(this.todos)
+        return this.todos
+
     }
 }
 
