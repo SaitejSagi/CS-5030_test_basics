@@ -33,6 +33,9 @@ describe('todo test suite', () => {
         expect(todo_service.delete_todo().todo[3]).toEqual(undefined)
     })
 
+    test("delete_todo(todo) if an element is deleted length get backs to 3",() => {
+        expect(todo_service.get_todos().todo.length).toEqual(3)
+    })
     //updating an element and testing
     test("update_todo(todo)", () =>{
 

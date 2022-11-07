@@ -46,7 +46,7 @@ class todoservice{
         "description": "D5",
         "done": false}
 
-      //let index = this.todos.todo.findIndex(todo => todo.id == id)
+      //let index = this.todos.todo.findIndex(todo => todo.title== "T1")
       this.todos.todo[2]=todo
         console.log(this.todos)
         return this.todos
